@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '../components/layout/Header';
 import SideBar from '@/components/layout/SideBar';
+import ContentSideBarBox from '@/components/layout/ContentSideBarBox';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,8 +17,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="ko">
       <body className={inter.className}>
         <Header />
-        <SideBar />
-        {children}
+        <ContentSideBarBox>
+          <SideBar />
+          {children}
+        </ContentSideBarBox>
       </body>
     </html>
   );
