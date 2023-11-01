@@ -1,9 +1,9 @@
 import ContentList from '@/components/layout/ContentList';
 
-export default function MyPage() {
+export default function ToyProjectPage() {
   return (
     <main className="flex-1">
-      my page
+      ToyProject page
       <ContentList />
     </main>
   );

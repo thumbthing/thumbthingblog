@@ -1,9 +1,9 @@
 import ContentList from '@/components/layout/ContentList';
 
-export default function MyPage() {
+export default function NextJsPage() {
   return (
     <main className="flex-1">
-      my page
+      Next.js page
       <ContentList />
     </main>
   );
