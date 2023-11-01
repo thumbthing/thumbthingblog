@@ -5,12 +5,11 @@ export default function SideBar() {
   const sideBarMenu = sideBarData.category;
 
   const sideBarList = sideBarMenu.map((item) => {
-    const urlText = item.toLowerCase();
-    const linkUrl = `/${urlText}`;
+    const linkUrl = `/${item.url}`;
     return (
-      <li key={item} className="my-1 hover:text-emerald-600">
+      <li key={item.url} className="my-1 hover:text-emerald-600">
         <Link href={linkUrl} replace>
-          {item}
+          {item.tag}
         </Link>
       </li>
     );

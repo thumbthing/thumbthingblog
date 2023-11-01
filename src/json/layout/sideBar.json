@@ -1,3 +1,10 @@
 {
-  "category": ["My", "React", "Next.js", "JavaScript", "MongoDB", "Toy Project"]
+  "category": [
+    { "tag": "My", "url": "my" },
+    { "tag": "React", "url": "react" },
+    { "tag": "Next.js", "url": "nextjs" },
+    { "tag": "JavaScript", "url": "javascript" },
+    { "tag": "Toy Project", "url": "toyproject" },
+    { "tag": "교육", "url": "education" }
+  ]
 }
