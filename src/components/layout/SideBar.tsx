@@ -7,9 +7,9 @@ export default function SideBar() {
   const sideBarList = sideBarMenu.map((item) => {
     const linkUrl = `/${item.url}`;
     return (
-      <li key={item.url} className="my-1 hover:text-emerald-600">
+      <li key={item.url} className="my-1 hover:text-emerald-600 dark:hover:text-lime-200">
         <Link href={linkUrl} replace>
-          {item.tag}
+          <p className="decoration-slate-900 dark:decoration-slate-100">{item.tag}</p>
         </Link>
       </li>
     );
